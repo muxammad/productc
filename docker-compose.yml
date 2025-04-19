@@ -1,0 +1,30 @@
+services:
+  productc.api:
+    image: ${DOCKER_REGISTRY-}productcapi
+    build:
+      context: .
+      dockerfile: src/Productc.Api/Dockerfile
+    ports:
+    - "5000:5000"
+    - "5001:5001"
+    depends_on:
+        - productcapi.database
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ConnectionStrings__LocalConnection: "Host=productcapi.database;Port=5432;Database=erp-system-server2025;Username=postgres;Password=23dev"
+
+  productcapi.database:
+    image: postgres:latest
+    container_name: productcapi.database23
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: 23dev
+      POSTGRES_DB: erp-system-server2025
+    volumes:
+      - productcapi.database:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+
+volumes:
+  productcapi.database:
+    driver: local
