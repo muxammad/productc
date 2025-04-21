@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using Productc.Api.DataAccess;
-using Productc.Api.Models.Products;
+using Productc.Application.Abstractions;
+using Productc.Domain.Entities.Products;
 
 namespace Productc.Api.Controllers
 {

@@ -1,14 +1,14 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using Productc.Api.Models.Products;
-using Productc.Api.Models.Users;
+using Productc.Application.Abstractions;
+using Productc.Domain.Entities.Products;
+using Productc.Domain.Entities.Users;
 
-namespace Productc.Api.DataAccess
+namespace Productc.Infrastructure.Persistense
 {
-    public class ApplicationDbContext(DbContextOptions dbContext) : DbContext(dbContext), IApplicationDbContext
+    public class ApplicationDbContext(DbContextOptions options) : DbContext(options), IApplicationDbContext
     {
         public DbSet<User> Users { get; set; }
         public DbSet<Product> Products { get; set; }
-
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
@@ -67,7 +67,5 @@ namespace Productc.Api.DataAccess
                 new Product { Id = Guid.NewGuid(), Name = "Toothbrush", Description = "Electric toothbrush with timer", Price = 29.99m, ImageUrl = "/images/toothbrush.jpg", Category = "Personal Care" }
             );
         }
-
-
     }
 }

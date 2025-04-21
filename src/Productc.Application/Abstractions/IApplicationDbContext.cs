@@ -1,8 +1,8 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using Productc.Api.Models.Products;
-using Productc.Api.Models.Users;
+using Productc.Domain.Entities.Products;
+using Productc.Domain.Entities.Users;
 
-namespace Productc.Api.DataAccess
+namespace Productc.Application.Abstractions
 {
     public interface IApplicationDbContext
     {
@@ -10,6 +10,5 @@ namespace Productc.Api.DataAccess
         public DbSet<Product> Products { get; set; }
 
         Task<int> SaveChangesAsync(CancellationToken cancellationToken = default);
-
     }
 }

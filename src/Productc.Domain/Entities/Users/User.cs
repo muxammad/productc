@@ -1,8 +1,9 @@
-﻿namespace Productc.Api.Models.Users
+﻿using Productc.Domain.Commons;
+
+namespace Productc.Domain.Entities.Users
 {
-    public class User
+    public class User : Auditable
     {
-        public Guid Id { get; set; }
         public string FirstName { get; set; } = string.Empty;
         public string LastName { get; set; } = string.Empty;
         public string Email { get; set; } = string.Empty;
