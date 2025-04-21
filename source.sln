@@ -7,6 +7,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Productc.Api", "src\Product
 EndProject
 Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{81DDED9D-158B-E303-5F62-77A2896D2A5A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Productc.Infrastructure", "..\src\Productc.Infrastructure\Productc.Infrastructure.csproj", "{7CA823D0-5337-41DD-9242-8833996330BA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Productc.Domain", "..\src\Productc.Domain\Productc.Domain.csproj", "{8168F637-3C87-4FBC-9BA5-9E498D5B73FE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Productc.Application", "..\src\Productc.Application\Productc.Application.csproj", "{4779DA30-BB29-4756-8398-DBCFD3D77CFA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +27,18 @@ Global
 		{81DDED9D-158B-E303-5F62-77A2896D2A5A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{81DDED9D-158B-E303-5F62-77A2896D2A5A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{81DDED9D-158B-E303-5F62-77A2896D2A5A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7CA823D0-5337-41DD-9242-8833996330BA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7CA823D0-5337-41DD-9242-8833996330BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7CA823D0-5337-41DD-9242-8833996330BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7CA823D0-5337-41DD-9242-8833996330BA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8168F637-3C87-4FBC-9BA5-9E498D5B73FE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8168F637-3C87-4FBC-9BA5-9E498D5B73FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8168F637-3C87-4FBC-9BA5-9E498D5B73FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8168F637-3C87-4FBC-9BA5-9E498D5B73FE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4779DA30-BB29-4756-8398-DBCFD3D77CFA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4779DA30-BB29-4756-8398-DBCFD3D77CFA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4779DA30-BB29-4756-8398-DBCFD3D77CFA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4779DA30-BB29-4756-8398-DBCFD3D77CFA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
